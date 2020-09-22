@@ -12,15 +12,11 @@
     
     
     <main class="login">
-    <header>
-       <div class="boxLogo">
-            <h1 class="logo">Woman</h1>
-        </div>
-        
-    </header>
+    
     <div class="container  card">
     <div class="flex justifyC-center">
         <img src="images/logo.png" alt="" class="logo">
+        <%-- teste para git --%>
         
     </div>
 
