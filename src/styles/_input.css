@@ -1,0 +1,18 @@
+.input-default {
+  border: 1px solid #61c2c7;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  color: #707070;
+  margin-top: 5px;
+  font-size: 12px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+}
+.input-default::placeholder {
+  font-family: 'Roboto', sans-serif;
+  color: #707070;
+  font-size: 12px;
+}
+.content-input { margin: 10px}

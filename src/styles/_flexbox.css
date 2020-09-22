@@ -1,0 +1,40 @@
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.justifyC-center {
+  justify-content: center;
+}
+.justifyC-space-between {
+  justify-content: space-between;
+}
+.justifyC-flex-end {
+  justify-content: flex-end;
+}
+.alignItems-flex-end {
+  align-items: flex-end;
+}
+.alignItems-center {
+  align-items: center;
+}
+.alignSelf-flex-end {
+  align-self: flex-end;
+}
+.flex0{
+    flex:0;
+}
+.flex1{
+    flex:1
+}
+.divider{
+    
+    border: 1px solid #61c2c7;
+    padding: 10px;
+    
+  
+}

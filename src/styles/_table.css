@@ -1,0 +1,40 @@
+.table-default {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;}
+.head {
+    border-bottom: 1px solid #f7f7f7 ;}
+.head th {
+      font-weight: normal;
+      white-space: nowrap;
+      text-align: left;
+      font-size: 14px;
+      color: #61c2c7;
+      text-transform: capitalize;
+    padding: 10px 20px;
+    }
+th,
+  td {
+    padding: 0 20px;}
+
+td:nth-child(2), th:nth-child(2) {
+      font-weight: 600;
+    }
+tbody > tr {
+
+    font-weight: normal;
+    color: #61c2c7;
+    transition: all 0.3s linear;}
+tbody > tr:hover {
+      background-color: #f7f7f7;
+    }
+.button-table{
+max-width: none;
+    min-width: 0px;
+    font-size: 12px;
+}
+.cancel{
+ border: 2px solid #66766f;
+    background: transparent;
+    color: #66766f
+}
