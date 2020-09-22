@@ -2,10 +2,9 @@
 <html>
    <head>
      <meta charset="utf-8">
-     <link rel="stylesheet"  href="../styles/_base.css">
-     <link rel="stylesheet"  href="../styles/_input.css">
-     <link rel="stylesheet"  href="../styles/_flexbox.css">
-     <link rel="stylesheet" href="../styles/_table.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/src/styles/_base.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/src/styles/_input.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/src/styles/_flexbox.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
        
     </head>
@@ -53,7 +52,7 @@
     <script>
         function attendancpatient(){
             
-            window.location.href = "attendanc.html"
+            window.location.href = "attendanc.jsp"
         }
     </script>
 </html>

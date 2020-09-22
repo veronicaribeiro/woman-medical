@@ -29,7 +29,7 @@
           <input id="name" type="password" class="input-default"/>
            </div>   
         <div>
-             <button class="button" onclick="login()">Cadastrar</button>
+             <button class="button" onclick="login()">Entrar</button>
          </div>    
     </div>
     

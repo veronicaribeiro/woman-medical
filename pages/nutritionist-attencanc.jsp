@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/src/styles/_base.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/src/styles/_input.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/src/styles/_flexbox.css">
+
 </head>
 
 <body>
@@ -14,7 +15,6 @@
         <div class="boxLogo">
             <h1 class="logo">Woman</h1>
         </div>
-
     </header>
     <div class="container">
         <div class="divider flex column">
@@ -29,31 +29,36 @@
         <button class="button" onclick="changeTab('others')">3.Outros</button>
 
     </div>
-
     <div class="container column" id="anamnesi">
         <div class="flex column">
 
             <div class="flex1">
-                <span>Queixa da triagem</span>
+                <span>Queixa Atual</span>
             </div>
 
             <div class="flex1 column">
 
                 <textarea class="input-default"></textarea>
-                <span>Antecedentes pessoais</span>
+                <span>Alimentação</span>
                 <textarea class="input-default"></textarea>
 
             </div>
             <div class="flex1 flex column">
-                <span>Data dos primeiros sintomas</span>
-                <input type="date" class="input-default">
+                <span>Peso</span>
+                <input type="number" class="input-default">
 
             </div>
             <div>
-                <span>História da molestia atual</span>
-                <input type="text" class="input-default">
+                <span>Altura</span>
+                <input type="number" class="input-default">
                 <span>Medicamentos em uso</span>
                 <input type="text" class="input-default">
+
+                <span>Elitismo/Tabagismo</span>
+                <input type="number" class="input-default">
+                <span>Atividade Fisica</span>
+                <input type="text" class="input-default">
+
 
             </div>
         </div>
@@ -71,73 +76,48 @@
             </div>
         </div>
         <div class="flex column divider mh-20">
-            <h3>Exame Fisico</h3>
-            <h4>Estado Geral:</h4>
+            <h3>Frequencia Intestinal</h3>
+
             <div class="flex1">
                 <label for="estado1">
-                    <input type="checkbox" id="estado1"> Bom
+                    <input type="checkbox" id="estado1"> 1xDia
                 </label>
                 <label for="estado2">
-                    <input type="checkbox" id="estado2"> Mau
+                    <input type="checkbox" id="estado2"> 2xDia
                 </label>
                 <label for="estado3">
-                    <input type="checkbox" id="estado3"> Febre
+                    <input type="checkbox" id="estado3"> 3xDia
                 </label>
                 <label for="estado4">
-                    <input type="checkbox" id="estado4"> Agitado
+                    <input type="checkbox" id="estado4"> Mais de 4xDia
                 </label>
                 <label for="estado5">
-                    <input type="checkbox" id="estado5"> Apatico
+                    <input type="checkbox" id="estado5"> 1xSemana
                 </label>
                 <label for="estado6">
-                    <input type="checkbox" id="estado6"> Icterico
+                    <input type="checkbox" id="estado6"> 2xSemana
                 </label>
                 <label for="estado7">
-                    <input type="checkbox" id="estado7"> Sudoreico
+                    <input type="checkbox" id="estado7"> 3xSemana
                 </label>
-                <label for="estado8">
-                    <input type="checkbox" id="estado8"> Edema
-                </label>
+
             </div>
             <hr>
             <div class="flex1 flex">
-                <table class="flex1">
-                    <tr>
-                        <th>nome</th>
-                        <th>NA</th>
-                        <th>NDN</th>
-                        <th>SIM</th>
-                        <th>obs</th>
-                    </tr>
-                    <tr>
-                        <td>Cabeça/pescoço</td>
-                        <td><input type="radio"></td>
-                        <td><input type="radio"></td>
-                        <td><input type="radio"></td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>Respiratório</td>
-                        <td><input type="radio"></td>
-                        <td><input type="radio"></td>
-                        <td><input type="radio"></td>
-                        <td><input type="text"></td>
-                    </tr>
-                </table>
+
+                <label for="estado7">
+                    <input type="checkbox" id="estado7"> Pastoso
+                </label>
+                <label for="estado7">
+                    <input type="checkbox" id="estado7"> Diarreia
+                </label>
+                <label for="estado7">
+                    <input type="checkbox" id="estado7"> Normal
+                </label>
             </div>
 
         </div>
-        <div>
-            <button class="button" onclick="finishattendanc()">Finalizar atendimento</button>
-            <script>
-                function finishattendanc() {
-
-                    window.location.href = "dashboard.html"
-                }
-
-
-            </script>
-        </div>
+        
     </div>
     <div class="container column" id="evolution">
         <div class="flex column">
@@ -151,11 +131,7 @@
             </div>
 
         </div>
-        <div classs="flex">
-
-            <button class="button" onclick="finishattendanc()">Salvar</button>
-            <button class="button" onclick="finishattendanc()">Novo</button>
-        </div>
+        
 
     </div>
     <div class="container column" id="others">
@@ -169,6 +145,10 @@
         </div>
 
     </div>
+    <div class="container column">
+            <button class="button" onclick="finishattendanc()">Salvar</button>
+            <button class="button" onclick="finishattendanc()">Novo</button>
+        </div>
 
     <script>
         var containerAnamnesi = document.getElementById("anamnesi");
@@ -190,7 +170,12 @@
                 containerOthers.style.display = "flex";
             }
         }
+         function finishattendanc() {
+
+                    window.location.href = "dashboard.html"
+                }
     </script>
+    
 </body>
 <style>
     .patientName {
@@ -198,7 +183,6 @@
         font-weight: bold;
         font-size: 18px;
     }
-
     #anamnesi {
         display: flex
     }
@@ -211,5 +195,7 @@
         display: none;
     }
 </style>
+
+
 
 </html>
