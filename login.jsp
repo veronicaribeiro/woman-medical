@@ -13,11 +13,9 @@
     
     <main class="login">
     
-    <div class="container  card">
+    <div class="container card">
     <div class="flex justifyC-center">
-        <img src="images/logo.png" alt="" class="logo">
-        <%-- teste para git --%>
-        
+        <img src="src/images/logo.png" alt="" class="logo">
     </div>
 
     
@@ -40,7 +38,7 @@
     <script>
         function login (){
             
-            window.location.href = "pages/dashboard.html"
+            window.location.href = "pages/dashboard.jsp"
         }
     
     
@@ -48,11 +46,12 @@
     
 <style>
     .login{
-        background-image:url(images/bg.jpg);
+        background-image:url("src/images/bg.jpg");
         background-size: cover;
         height: 100%;
-
-        box-sizing: border-box
+        box-sizing: border-box;
+        align-items: center;
+        display:flex
         
     }
     .card{
@@ -60,8 +59,9 @@
         padding: 20px;
         border-radius: 8px;
         width: 450px;
+        max-height: 450px;
         box-shadow: 2px 2px 2px #707070;
-        margin-top: 30px;
+        
     }
     .logo{
         width: 100px;
